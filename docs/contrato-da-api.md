@@ -23,7 +23,7 @@ Coluna **Funciona**: `sim` para as rotas que já respondem nesta etapa.
 | `GET` | `/produtos` | Lista os produtos | Nenhuma | lista de `ProdutoResponseDTO` | `200` | Nenhum | sim |
 | `GET` | `/produtos/{id}` | Busca um produto | Nenhuma | `ProdutoResponseDTO` | `200` | `404` | sim |
 | `POST` | `/produtos` | Cadastra um produto | `ProdutoRequestDTO` | `ProdutoResponseDTO` | `201` | `400` | sim |
-| `PUT` | `/produtos/{id}` | Atualiza nome e estoque mínimo | `ProdutoRequestDTO` | `ProdutoResponseDTO` | `200` | `400`, `404` | não |
+| `PUT` | `/produtos/{id}` | Atualiza nome e estoque mínimo. O `estoqueAtual` enviado é ignorado: depois do cadastro, ele só muda pelas entregas (R1 e R4) | `ProdutoRequestDTO` | `ProdutoResponseDTO` | `200` | `400`, `404` | não |
 | `DELETE` | `/produtos/{id}` | Remove um produto sem entregas | Nenhuma | Nenhuma (sem corpo) | `204` | `400`, `404` | não |
 
 ### Veículos

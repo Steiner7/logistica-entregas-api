@@ -1,6 +1,9 @@
 package api.service;
 
-// Entrega que não existe: herda de RecursoNaoEncontradoException, então sai como 404.
+// CAMADA: Service
+// RESPONSABILIDADE: avisar que uma entrega não existe. Herda de
+//                   RecursoNaoEncontradoException, por isso vira 404.
+// SITUAÇÃO: implementada.
 public class EntregaNaoEncontradaException extends RecursoNaoEncontradoException {
 
     public EntregaNaoEncontradaException(Long id) {

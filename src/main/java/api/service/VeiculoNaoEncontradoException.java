@@ -1,6 +1,9 @@
 package api.service;
 
-// Veículo que não existe: herda de RecursoNaoEncontradoException, então sai como 404.
+// CAMADA: Service
+// RESPONSABILIDADE: avisar que um veículo não existe. Herda de
+//                   RecursoNaoEncontradoException, por isso vira 404.
+// SITUAÇÃO: implementada.
 public class VeiculoNaoEncontradoException extends RecursoNaoEncontradoException {
 
     public VeiculoNaoEncontradoException(Long id) {

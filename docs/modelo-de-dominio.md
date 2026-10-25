@@ -2,7 +2,7 @@
 
 Três entidades: **Produto** (estoque), **Veiculo** (frota) e **Entrega** (rastreamento). A entrega liga as outras duas: leva uma quantidade de um produto, num veículo.
 
-O desenho nasceu do banco que o grupo modelou primeiro (`controleestoque`, `controlefrota` e `rastreamentoentregas`, no dump `LogisticaCadeiaSuprimentos`). Na API as tabelas ganharam nomes no plural e em `snake_case`, id gerado pelo banco e os campos que as regras de negócio precisam (`quantidade` e `data_conclusao` na entrega).
+O desenho nasceu do banco que o grupo modelou primeiro (`controleestoque`, `controlefrota` e `rastreamentoentregas`, num dump do PostgreSQL que serviu só de ponto de partida e não faz parte deste repositório). Na API as tabelas ganharam nomes no plural e em `snake_case`, id gerado pelo banco e os campos que as regras de negócio precisam (`quantidade` e `data_conclusao` na entrega).
 
 ## Entidades
 
